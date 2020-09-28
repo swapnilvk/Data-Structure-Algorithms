@@ -1,6 +1,4 @@
-/*
-Input Format
-
+/*Input Format
 Input will contain four integers -, one in each line.
 
 Output Format
@@ -15,9 +13,7 @@ Sample Input
 5
 
 Sample Output
-6
-
-*/
+6*/
 
 #include <iostream>
 #include <cstdio>
