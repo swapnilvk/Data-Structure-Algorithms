@@ -35,6 +35,13 @@ X is static variable and will be added while returning from the function call so
     /
 F(0) + 5  = 5
 
+Time complexty is O(n)
+
+[
+    1              n=0
+    T(n-1) + 1     n>0
+]
+
 
 Output is 25
 */
