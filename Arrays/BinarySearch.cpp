@@ -41,3 +41,6 @@ int main()
     
     return 0;
 }
+
+//Binary search using array
+//Time complexity O(logn)
