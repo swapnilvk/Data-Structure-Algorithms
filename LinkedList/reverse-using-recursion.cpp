@@ -1,0 +1,61 @@
+/*
+@author: Swapnil Vivek kulkarni
+Reverse the given linkedlit
+Method: Reverse the pointers of linked list using recursion
+*/
+	
+#include<iostream>
+
+using namespace std;
+
+struct node {
+	int data;
+	struct node* next;
+}*head;
+
+void create(int a[], const int & size) {
+	struct node *last;
+	for(int i=0; i<size; i++) {
+		if(head == nullptr) {
+			head = new node();
+			head->data = a[i];
+			head->next = nullptr;
+			last = head;
+		} else {
+			struct node *temp = new node();
+			temp->data = a[i];
+			temp->next = nullptr;
+			last->next = temp;
+			last = temp;
+		}
+	}
+}
+
+void print(struct node * p) {
+	cout<<endl;
+	while(p!=nullptr) {
+		cout<<p->data<<"->";
+		p=p->next;
+	}
+}
+
+void recursive_reverse(struct node *q, struct node *p) {
+    if(p!=nullptr) {
+        recursive_reverse(p, p->next);
+        p->next =q;
+    } else {
+        head = q;
+    }
+}
+
+
+int main() {
+	int a[] = {10,10,20,30,30,30};
+    
+	create(a,6);
+    print(head); //Print existing liked list
+	recursive_reverse(nullptr, head);
+    print(head); //Print reveresed linked list
+	return 0;
+}
+
