@@ -41,7 +41,6 @@ void print(struct node * p) {
 }
 
 void reverse(struct node *start) {
-    print(start); //Print existing liked list
 
     struct node *p = start;
     struct node *q = nullptr;
@@ -52,16 +51,18 @@ void reverse(struct node *start) {
         p = p->next;
         q->next = r;
     }
-    start = q;
+    head = q;
 
-    print(start); //Print reveresed linked list
 }
 
 
 int main() {
 	int a[] = {10,10,20,30,30,30};
+    
 	create(a,6);
+    print(head); //Print existing liked list
 	reverse(head);
+    print(head); //Print reveresed linked list
 	return 0;
 }
 
