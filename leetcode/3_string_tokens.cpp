@@ -18,21 +18,5 @@ while (i < 10){
 int main(){
 
 	f();
-	// string str;
-	// cout<<"Enter string: ";
-	// getline(cin,str);
-
-	// stringstream ss(str);
-	// string token;
-	// vector<string> tokens;
-	// while(getline(ss, token, ' ')) {
-	// 	tokens.push_back(token);
-	// }
-
-	// for(auto iter : tokens) {
-	// 	cout<<iter<<", ";
-	// }
-	// cout<<endl;
-
 	return 0;
 }
