@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void f( )
+void f()
 {
   uint v[10];
 uint i = 0;
