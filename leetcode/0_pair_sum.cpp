@@ -1,3 +1,5 @@
+// @author: Swapnil Vivek Kulkarni
+// Problem: Find two distinct integers from an array to form a target sum
 #include <iostream>
 #include <unordered_set>
 #include <vector>
